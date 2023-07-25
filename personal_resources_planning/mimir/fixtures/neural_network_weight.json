@@ -1,0 +1,702 @@
+[
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 1,
+        "fields": {
+            "weight": 1.472593865083899
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 2,
+        "fields": {
+            "weight": 0.9431839251912288
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 3,
+        "fields": {
+            "weight": -0.1021457865291745
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 4,
+        "fields": {
+            "weight": -3.796339895638894
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 5,
+        "fields": {
+            "weight": 0.18019169803068877
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 6,
+        "fields": {
+            "weight": -0.16280051256493738
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 7,
+        "fields": {
+            "weight": -0.30041228847378115
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 8,
+        "fields": {
+            "weight": -0.14658883676846263
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 9,
+        "fields": {
+            "weight": -0.3529589935590176
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 10,
+        "fields": {
+            "weight": -0.0678350250065675
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 11,
+        "fields": {
+            "weight": -1.3488387631300833
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 12,
+        "fields": {
+            "weight": -0.2436682900318356
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 13,
+        "fields": {
+            "weight": -1.3004641880568433
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 14,
+        "fields": {
+            "weight": -0.5300676100805057
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 15,
+        "fields": {
+            "weight": 2.104691395149232
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 16,
+        "fields": {
+            "weight": 0.5213943142750043
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 17,
+        "fields": {
+            "weight": -0.13700941974658917
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 18,
+        "fields": {
+            "weight": -0.36882644394767
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 19,
+        "fields": {
+            "weight": 0.16570136023791923
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 20,
+        "fields": {
+            "weight": -0.43505038137903923
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 21,
+        "fields": {
+            "weight": 0.2628808086895999
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 22,
+        "fields": {
+            "weight": 0.09540477251262977
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 23,
+        "fields": {
+            "weight": 1.0279165881549424
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 24,
+        "fields": {
+            "weight": -0.18614346539767215
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 25,
+        "fields": {
+            "weight": 0.19399898460217457
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 26,
+        "fields": {
+            "weight": 0.4997964589962733
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 27,
+        "fields": {
+            "weight": -1.070730279551716
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 28,
+        "fields": {
+            "weight": -0.40383768410359777
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 29,
+        "fields": {
+            "weight": -0.44654680620492154
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 30,
+        "fields": {
+            "weight": -0.6010817208221786
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 31,
+        "fields": {
+            "weight": -0.07750669683955745
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 32,
+        "fields": {
+            "weight": -0.6974981190146855
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 33,
+        "fields": {
+            "weight": -0.795346204808412
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 34,
+        "fields": {
+            "weight": 0.04053164876470116
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 35,
+        "fields": {
+            "weight": 1.3960566702875437
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 36,
+        "fields": {
+            "weight": -0.7773431235872381
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 37,
+        "fields": {
+            "weight": -2.7590867687657292
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 38,
+        "fields": {
+            "weight": -4.674437253681985
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 39,
+        "fields": {
+            "weight": 1.0496167070742775
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 40,
+        "fields": {
+            "weight": -1.4440028108676075
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 41,
+        "fields": {
+            "weight": -0.1851795742091277
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 42,
+        "fields": {
+            "weight": -0.7332249692048245
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 43,
+        "fields": {
+            "weight": 1.2912935811150803
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 44,
+        "fields": {
+            "weight": 0.23940846756529002
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 45,
+        "fields": {
+            "weight": -0.02432364498499397
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 46,
+        "fields": {
+            "weight": 0.03370217346873649
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 47,
+        "fields": {
+            "weight": 0.4203749782632578
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 48,
+        "fields": {
+            "weight": -0.3895789357093515
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 49,
+        "fields": {
+            "weight": 1.5259420265291177
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 50,
+        "fields": {
+            "weight": 0.7946030889249844
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 51,
+        "fields": {
+            "weight": -0.3017122421011188
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 52,
+        "fields": {
+            "weight": -3.732983784606238
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 53,
+        "fields": {
+            "weight": 3.0758408354667517
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 54,
+        "fields": {
+            "weight": 1.6826957239815428
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 55,
+        "fields": {
+            "weight": -2.474206014943052
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 56,
+        "fields": {
+            "weight": -1.936714241384285
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 57,
+        "fields": {
+            "weight": 0.23795226344625475
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 58,
+        "fields": {
+            "weight": -0.03062108641621703
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 59,
+        "fields": {
+            "weight": -1.1021462039871643
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 60,
+        "fields": {
+            "weight": -0.337418725815192
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 61,
+        "fields": {
+            "weight": 0.3098990290970122
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 62,
+        "fields": {
+            "weight": 0.02083666266661431
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 63,
+        "fields": {
+            "weight": -0.12525772731334303
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 64,
+        "fields": {
+            "weight": -0.04087988172918473
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 65,
+        "fields": {
+            "weight": 0.16123454361122777
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 66,
+        "fields": {
+            "weight": 0.3124569778036067
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 67,
+        "fields": {
+            "weight": -1.0463190129526845
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 68,
+        "fields": {
+            "weight": -0.3690624464345821
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 69,
+        "fields": {
+            "weight": -5.941901580409897
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 70,
+        "fields": {
+            "weight": -8.532732866234252
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 71,
+        "fields": {
+            "weight": 0.08977877187303597
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 72,
+        "fields": {
+            "weight": -0.9875714771603556
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 73,
+        "fields": {
+            "weight": -0.14816239175974993
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 74,
+        "fields": {
+            "weight": -0.16644704061586754
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 75,
+        "fields": {
+            "weight": -0.3180519666024638
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 76,
+        "fields": {
+            "weight": -0.28774112356182135
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 77,
+        "fields": {
+            "weight": -0.9039794847801798
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 78,
+        "fields": {
+            "weight": -1.4738962585059003
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 79,
+        "fields": {
+            "weight": 1.3951382669768113
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 80,
+        "fields": {
+            "weight": 0.05906426533353319
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 81,
+        "fields": {
+            "weight": -6.068674929768041
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 82,
+        "fields": {
+            "weight": 0.2210081059281331
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 83,
+        "fields": {
+            "weight": 1.3540159362426956
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 84,
+        "fields": {
+            "weight": -2.1041763107337013
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 85,
+        "fields": {
+            "weight": -0.08446356329855734
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 86,
+        "fields": {
+            "weight": -0.7336306238495645
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 87,
+        "fields": {
+            "weight": 1.1817103529888733
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 88,
+        "fields": {
+            "weight": -0.009181507574949142
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 89,
+        "fields": {
+            "weight": -1.2346945111091352
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 90,
+        "fields": {
+            "weight": -1.9462022700366286
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 91,
+        "fields": {
+            "weight": -1.4220439025046439
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 92,
+        "fields": {
+            "weight": -0.26719418589152977
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 93,
+        "fields": {
+            "weight": -5.679201368996607
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 94,
+        "fields": {
+            "weight": 4.069873168966941
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 95,
+        "fields": {
+            "weight": 1.1393974682123138
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 96,
+        "fields": {
+            "weight": 0.10554650138874822
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 97,
+        "fields": {
+            "weight": 1.0552158969535959
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 98,
+        "fields": {
+            "weight": -4.381311327147914
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 99,
+        "fields": {
+            "weight": 0.2801511440353582
+        }
+    },
+    {
+        "model": "mimir.NeuralNetworkWeight",
+        "pk": 100,
+        "fields": {
+            "weight": -1.3982082999885854
+        }
+    }
+]
