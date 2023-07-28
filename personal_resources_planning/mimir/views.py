@@ -2,9 +2,9 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from mimir.neural_network import NeuralNetwork
-from mimir.serializers import CardSerializer, CategorySerializer
+from mimir.serializers import CardSerializer, CategorySerializer, ReviewSerializer
 from mimir.models import Card, Category
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 
 # Create your views here.
 nn = NeuralNetwork()
@@ -22,7 +22,7 @@ def createCard(request):
                         reviewInterval=0,
                         repetition=0,
                         predictedInterval=predictedInterval,
-                        nextReviewOn=(datetime.now() + timedelta(days=predictedInterval)).date())
+                        nextReviewOn=(date.today() + timedelta(days=predictedInterval)))
         return Response(serializer.data, status=status.HTTP_201_CREATED)
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
@@ -83,11 +83,45 @@ def updateOrDeleteCategory(request, category_id):
 
         # Remove current category's cards
         Card.objects.filter(category=category_id).delete()
-        
+
         # Then remove the category itself.
         category.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 @api_view(['POST'])
 def reviewCard(request):
-    pass
+    serializer = ReviewSerializer(data=request.data)
+    if serializer.is_valid():
+        try:
+            card = Card.objects.get(id=serializer.validated_data.get('cardId'))
+
+            nn.feedBackToNeuralNetwork(
+                lastPredictedInterval=card.lastPredictedInterval,
+                reviewInterval=card.reviewInterval,
+                repetition=card.repetition,
+                grade=card.grade,
+                predictedInterval=card.predictedInterval,
+                actualInterval=(date.today() - card.lastReviewOn).days,
+                actualGrade=serializer.validated_data.get('actualGrade')
+            )
+            nextInterval = nn.predictNextInterval(
+                predictedInterval=card.predictedInterval,
+                reviewInterval=(date.today() - card.lastReviewOn).days,
+                repetition=card.repetition + 1,
+                grade=serializer.validated_data.get('actualGrade')
+            )
+            card.lastPredictedInterval = card.predictedInterval
+            card.reviewInterval = (date.today() - card.lastReviewOn).days
+            card.repetition += 1
+            card.grade = serializer.validated_data.get('actualGrade')
+            card.predictedInterval = nextInterval
+
+            card.nextReviewOn = date.today() + timedelta(days=nextInterval)
+            card.lastReviewOn = date.today()
+
+            card.updatedOn = datetime.now()
+            card.save()
+            return Response(status=status.HTTP_200_OK)
+        except Card.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

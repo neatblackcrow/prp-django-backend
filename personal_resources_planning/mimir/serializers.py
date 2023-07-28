@@ -41,3 +41,7 @@ class CardSerializer(serializers.Serializer):
         instance.ordered = validated_data.get('ordered', instance.ordered)
         instance.save()
         return instance
+    
+class ReviewSerializer(serializers.Serializer):
+    cardId = serializers.IntegerField(min_value=1)
+    actualGrade = serializers.IntegerField(min_value=0, max_value=5)
