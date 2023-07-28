@@ -2,7 +2,7 @@ import math
 import numpy as np
 from numpy.random import shuffle
 from django.db import transaction
-from .models import NeuralNetworkWeight, UserCase
+from mimir.models import NeuralNetworkWeight, UserCase
 
 
 class NeuralNetwork:

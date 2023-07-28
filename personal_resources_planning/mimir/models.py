@@ -59,7 +59,7 @@ class Card(models.Model):
     front = models.TextField(db_column='front')
     back = models.TextField(db_column='back', null=True)
     nextReviewOn = models.DateField(db_column='next_review_on')
-    lastReviewOn = models.DateField(db_column='last_review_on', default=datetime.now)
+    lastReviewOn = models.DateField(db_column='last_review_on', default=lambda: datetime.now().date())
     category = models.ForeignKey(db_column='category', to='Category', on_delete=models.PROTECT, default=1)
     cardType = models.ForeignKey(db_column='card_type', to='CardType', on_delete=models.PROTECT)
     ordered = models.IntegerField(db_column='ordered')
