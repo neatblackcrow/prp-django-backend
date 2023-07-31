@@ -1,12 +1,6 @@
 from rest_framework import serializers
 from mimir.models import Category, Card, CardType
 
-class CategorySerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Category
-        fields = '__all__'
-        read_only_fields = ['id', 'createdOn', 'updatedOn']
-
 class CardSerializer(serializers.Serializer):
     id = serializers.PrimaryKeyRelatedField(read_only=True)
     createdOn = serializers.DateTimeField(read_only=True)
@@ -41,6 +35,20 @@ class CardSerializer(serializers.Serializer):
         instance.ordered = validated_data.get('ordered', instance.ordered)
         instance.save()
         return instance
+    
+class CategorySerializer(serializers.ModelSerializer):
+
+    cards = CardSerializer(many=True)
+
+    def to_representation(self, instance):
+        if instance.id > 0:
+            self.fields['children'] = CategorySerializer(many=True, read_only=True)
+        return super(CategorySerializer, self).to_representation(instance)
+
+    class Meta:
+        model = Category
+        fields = ['id', 'name', 'createdOn', 'updatedOn', 'parentCategory', 'ordered', 'cards']
+        read_only_fields = ['id', 'createdOn', 'updatedOn']
     
 class ReviewSerializer(serializers.Serializer):
     cardId = serializers.IntegerField(min_value=1)

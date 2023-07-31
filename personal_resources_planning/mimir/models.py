@@ -1,5 +1,5 @@
 from django.db import models
-from datetime import datetime
+from datetime import datetime, date
 
 class NeuralNetworkWeight(models.Model):
     weight = models.FloatField(db_column='weight')
@@ -36,7 +36,7 @@ class Category(models.Model):
     name = models.TextField(db_column='name')
     createdOn = models.DateTimeField(db_column='created_on', default=datetime.now)
     updatedOn = models.DateTimeField(db_column='updated_on', default=datetime.now)
-    parentCategory = models.ForeignKey(db_column='parent_category', to='Category', on_delete=models.PROTECT, default=1)
+    parentCategory = models.ForeignKey(db_column='parent_category', to='self', on_delete=models.PROTECT, default=1, related_name='children')
     ordered = models.IntegerField(db_column='ordered')
 
     class Meta:
@@ -59,8 +59,8 @@ class Card(models.Model):
     front = models.TextField(db_column='front')
     back = models.TextField(db_column='back', null=True)
     nextReviewOn = models.DateField(db_column='next_review_on')
-    lastReviewOn = models.DateField(db_column='last_review_on', default=lambda: datetime.now().date())
-    category = models.ForeignKey(db_column='category', to='Category', on_delete=models.PROTECT, default=1)
+    lastReviewOn = models.DateField(db_column='last_review_on', default=date.today)
+    category = models.ForeignKey(db_column='category', to='Category', on_delete=models.PROTECT, default=1, related_name='cards')
     cardType = models.ForeignKey(db_column='card_type', to='CardType', on_delete=models.PROTECT)
     ordered = models.IntegerField(db_column='ordered')
 

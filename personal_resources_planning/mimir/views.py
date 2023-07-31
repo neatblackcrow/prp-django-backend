@@ -11,7 +11,9 @@ nn = NeuralNetwork()
 
 @api_view(['GET'])
 def buildKnowledgeTree(request):
-    pass
+    rootCategory = Category.objects.get(id=1)
+    serializer = CategorySerializer(rootCategory)
+    return Response(serializer.data, status=status.HTTP_200_OK)
 
 @api_view(['POST'])
 def createCard(request):

@@ -22,12 +22,23 @@
     },
     {
         "model": "mimir.Category",
+        "pk": 0,
+        "fields": {
+            "name": "Root parent",
+            "createdOn": "2023-07-23T00:00:00.000+07",
+            "updatedOn": "2023-07-23T00:00:00.000+07",
+            "parentCategory": 0,
+            "ordered": 1
+        }
+    },
+    {
+        "model": "mimir.Category",
         "pk": 1,
         "fields": {
             "name": "Root",
             "createdOn": "2023-07-23T00:00:00.000+07",
             "updatedOn": "2023-07-23T00:00:00.000+07",
-            "parentCategory": 1,
+            "parentCategory": 0,
             "ordered": 1
         }
     }
