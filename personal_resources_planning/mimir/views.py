@@ -1,6 +1,7 @@
 from rest_framework import status
 from rest_framework.response import Response
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import IsAuthenticated
 from mimir.neural_network import NeuralNetwork
 from mimir.serializers import CardSerializer, CategorySerializer, ReviewSerializer
 from mimir.models import Card, Category
@@ -10,12 +11,14 @@ from datetime import datetime, timedelta, date
 nn = NeuralNetwork()
 
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def buildKnowledgeTree(request):
     rootCategory = Category.objects.get(id=1)
     serializer = CategorySerializer(rootCategory)
     return Response(serializer.data, status=status.HTTP_200_OK)
 
 @api_view(['POST'])
+@permission_classes([IsAuthenticated])
 def createCard(request):
     serializer = CardSerializer(data=request.data)
     if serializer.is_valid():
@@ -29,6 +32,7 @@ def createCard(request):
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 @api_view(['PUT', 'DELETE'])
+@permission_classes([IsAuthenticated])
 def updateOrDeleteCard(request, card_id):
     try:
         card = Card.objects.get(id=card_id)
@@ -46,6 +50,7 @@ def updateOrDeleteCard(request, card_id):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 @api_view(['POST'])
+@permission_classes([IsAuthenticated])
 def createCategory(request):
     serializer = CategorySerializer(data=request.data)
     if serializer.is_valid():
@@ -66,6 +71,7 @@ def _removeSubCategoryRecursively(category_id):
         category.delete()
 
 @api_view(['PUT', 'DELETE'])
+@permission_classes([IsAuthenticated])
 def updateOrDeleteCategory(request, category_id):
     try:
         category = Category.objects.get(id=category_id)
@@ -91,6 +97,7 @@ def updateOrDeleteCategory(request, category_id):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 @api_view(['POST'])
+@permission_classes([IsAuthenticated])
 def reviewCard(request):
     serializer = ReviewSerializer(data=request.data)
     if serializer.is_valid():
